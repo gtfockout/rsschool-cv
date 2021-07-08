@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(102, 179, 174);
+  background: linear-gradient(90deg, rgba(102, 179, 174, 1) 0%, rgba(1, 129, 170, 1) 16%, rgba(0, 212, 255, 1) 100%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  color: #f2f2f2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  height: 500px;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1.3px;
+  width: 80%;
+  bottom: 0;
+  right: 10%;
+  background-color: #fff;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+}
+
+.header__photo {
+  width: 30%;
+  border-radius: 40%;
+  border: 1.5px solid #fff;
+}
+
+.header__name {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  margin-left: 10%;
+}
+
+.header__name::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 120%;
+  bottom: -30px;
+  left: -10%;
+  background: #f2f2f2;
+}
+
+.header__name::before {
+  content: "Dimmite mihi, quoniam ego sum optimus";
+  position: absolute;
+  font-size: 10px;
+  letter-spacing: 7px;
+  bottom: -50px;
+  opacity: 0.2;
+}
+
+section {
+  position: relative;
+  padding: 30px 0;
+}
+
+section:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.5px;
+  width: 80%;
+  bottom: -20px;
+  left: 10%;
+  background-color: #c1c1c1;
+  opacity: 0.5;
+}
+
+.title {
+  position: relative;
+  font-size: 190%;
+}
+
+.title::before {
+  content: ">";
+  position: absolute;
+  font-size: 70%;
+  left: -40px;
+  bottom: 20%;
+  opacity: 0.5;
+}
+
+.contacts-list {
+  list-style-type: circle;
+}
+
+.contacts-list__item {
+  font-size: 130%;
+}
+
+.contacts-list__link {
+  text-decoration: underline;
+  transition: all 0.2s;
+}
+
+.contacts-list__link:hover {
+  color: #c1c1c1;
+  text-decoration: none;
+}
+
+.about__text,
+.skills-list__item,
+.code-example__code {
+  font-size: 130%;
+}
+
+.work-experience__subtitle {
+  font-size: 140%;
+}
+
+.work-experience-list {
+  list-style-type: decimal-leading-zero;
+  margin-left: 25px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.github {
+  width: 309px;
+}
+
+.github__img {
+  width: 80%;
+}
+
+.rsschool {
+  width: 100px;
+}
+
+.rsschool__img {
+  width: 130%;
+}
+
+.footer__year {
+  font-size: 30px;
+  font-weight: 700;
+  color: #c1c1c1;
+}

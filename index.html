@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
   <title>HTML, CSS & Git Basics</title>
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__content">
-        <img class="header__photo" src="./images/photo.jpg" alt="Photo">
-        <h2 class="header__name">Shaikevich Vladislav</h2>
-      </div>
+      <figure class="header__content">
+        <img class="header__photo" src="./images/photo.jpg" alt="My Photo">
+        <h1 class="header__name">Shaikevich Vladislav</h1>
+      </figure>
     </div>
   </header>
   <main class="main">
@@ -23,10 +25,11 @@
         <h2 class="title contacts__title">Contacts:</h2>
         <ul class="contacts-list">
           <li class="contacts-list__item">
-            email: <a href="mailto:vladislav.shaikevich3107@gmail.com"
-              class="contacts-list__link">vladislav.shaikevich3107@gmail.com</a>
+            email: <a href="mailto:vladislav.shaikevich3107@gmail.com" class="contacts-list__link"
+              target="_blank">vladislav.shaikevich3107@gmail.com</a>
           </li>
-          <li class="contacts-list__item">vk: <a href="https://vk.com/gtfockout" class="contacts-list__link">Влад
+          <li class="contacts-list__item">vk: <a href="https://vk.com/gtfockout" class="contacts-list__link"
+              target="_blank">Влад
               Галицкий</a>
           </li>
         </ul>
@@ -112,8 +115,8 @@
       <div class="container">
         <h2 class="title education-title">Education: software technician</h2>
         <p class="education__text">“Baranovichi College of Light Industry, V.E. Chernysheva”</p>
-        <p class="education__text">○ Specialty: 2-40 01 01 “Information technology software”</p>
-        <p class="education__text">○ Specialization: 2-40 01 01 35 “Software for economic and business processing”</p>
+        <p class="education__text"> Specialty: 2-40 01 01 “Information technology software”</p>
+        <p class="education__text"> Specialization: 2-40 01 01 35 “Software for economic and business processing”</p>
       </div>
     </section>
     <section class="english">
@@ -123,13 +126,13 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__container">
       <a href="https://github.com/gtfockout" class="github" target="_blank">
-        <img src="./images/github.png" alt="GitHub" class="github__img">
+        <img class="github__img" src="./images/github.png" alt="GitHub">
       </a>
       <p class="footer__year">2021</p>
-      <a href="https://rs.school/" class="rsschool" target="_blank">
-        <img src="./images/rsschool.png" alt="RS School">
+      <a href="https://rs.school/js/" class="rsschool" target="_blank">
+        <img class="rsschool__img" src="./images/rs_school_js.svg" alt="RS School">
       </a>
     </div>
   </footer>
